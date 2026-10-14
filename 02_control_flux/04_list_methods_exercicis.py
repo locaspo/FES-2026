@@ -8,6 +8,11 @@
 # Afegeix-hi el nombre 6 al final fent servir append().
 # Insereix-hi el nombre 10 a la posició 2 fent servir insert().
 # Modifica el primer element de la llista perquè sigui 0.
+print("\n---EX 1---")
+
+llista_1 = [1, 2, 3, 4, 5]
+llista_1.append(6)
+llista_1.insert(2,10)
 
 # Exercici 2: Combinar i buidar llistes
 # Crea dues llistes:
@@ -17,18 +22,45 @@
 # Elimina la primera aparició del nombre 1 de llista_a fent servir remove().
 # Elimina l'element de l'índex 3 de llista_a fent servir pop(). Imprimeix l'element eliminat.
 # Buida completament llista_b fent servir clear().
+print("\n---EX 2---")
+
+llista_a = [1, 2, 3]
+llista_b = [4, 5, 6, 1, 2]
+
+llista_a.extend(llista_b)
+llista_a.remove(1)
+eliminat = llista_a.pop(3)
+print(f"Nombre eliminat: {eliminat}")
+
+llista_b.clear
 
 # Exercici 3: Slicing i eliminació amb del
 # Crea una llista amb els nombres de l'1 al 10.
 # Fes servir slicing i del per eliminar els elements des de l'índex 2 fins al 5
 # (sense incloure el 5).
 # Imprimeix la llista resultant.
+print("\n---EX 3---")
+llista_3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+del llista_3[2:5]
+print(llista_3)
 
 # Exercici 4: Ordenar i comptar
 # Crea una llista amb els nombres següents: [5, 2, 8, 1, 9, 4, 2].
 # Ordena la llista de manera ascendent fent servir sort().
 # Compta quantes vegades apareix el nombre 2 a la llista fent servir count().
 # Comprova si el nombre 7 és a la llista fent servir in.
+print("\n---EX 4---")
+llista_4 = [5, 2, 8, 1, 9, 4, 2]
+
+llista_4.sort()
+quant_2 = llista_4.count(2)
+comprovar_set = 7 in llista_4
+
+print(f"Llista ordenada: {llista_4}.")
+print(f"El 2 apareix {quant_2} vegades.")
+print(f"El 7 esta en la llista: {comprovar_set}")
+
 
 # Exercici 5: Còpia i referència
 # Crea una llista anomenada original amb els nombres [1, 2, 3].
@@ -37,7 +69,22 @@
 # Crea una referència a la llista original anomenada referencia.
 # Modifica a 10 el primer element de la llista referencia.
 # Imprimeix les quatre llistes (original, copia_1, copia_2 i referencia) i observa'n els canvis.
+print("\n---EX 5---")
+original = [1,2,3]
+copia_1 = original[:]
+copia_2 = original.copy
+referencia = original 
+referencia[0] = 10 
+print(f"Original: {original}")
+print(f"copia_1: {copia_1}")
+print(f"copia_2: {copia_2}")
+print(f"referencia: {referencia}")
 
 # Exercici 6: Ordenar cadenes sense distingir entre majúscules i minúscules
 # Crea una llista amb les cadenes següents: ["Poma", "pera", "PLÀTAN", "taronja"].
 # Ordena la llista sense distingir entre majúscules i minúscules.
+print("\n---EX 6---")
+llista_6 = ["Poma", "pera", "PLÀTAN", "taronja"]
+
+llista_6.sort(key=str.lower)
+print(llista_6)
