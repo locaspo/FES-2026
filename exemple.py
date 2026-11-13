@@ -1,5 +1,0 @@
-print("Hola! Aquest es el meu primer programa en Python.")
-print(2+3)
-print(5*6)
-print(10/2)
-print(10-3)
